@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180409 11:53:29.053" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\ssawant8\Desktop\Notater\RobotFramework\Tester\testskript1.robot" id="s1" name="Testskript1">
+<test id="s1-t1" name="TestCase1">
+<kw name="Åpne Sogeti sin nettside i chrome">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20180409 11:53:29.310" level="INFO">Opening browser 'chrome' to base url 'https://www.sogeti.no/'.</msg>
+<status status="PASS" endtime="20180409 11:53:40.480" starttime="20180409 11:53:29.310"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Navigerte til Sogeti Norge sin nettside</arg>
+</arguments>
+<status status="PASS" endtime="20180409 11:53:40.483" starttime="20180409 11:53:40.480"></status>
+</kw>
+<status status="PASS" endtime="20180409 11:53:40.483" starttime="20180409 11:53:29.309"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20180409 11:53:43.485" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180409 11:53:43.485" starttime="20180409 11:53:40.484"></status>
+</kw>
+<kw name="Finn og navigere til Menyvalget, &quot;Hvorfor oss?&quot;">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css:#header &gt; nav &gt; ul &gt; li:nth-child(2) &gt; div &gt; span</arg>
+</arguments>
+<msg timestamp="20180409 11:53:43.488" level="INFO">Clicking element 'css:#header &gt; nav &gt; ul &gt; li:nth-child(2) &gt; div &gt; span'.</msg>
+<status status="PASS" endtime="20180409 11:53:43.608" starttime="20180409 11:53:43.488"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Fant hvorfor oss menyen</arg>
+</arguments>
+<status status="PASS" endtime="20180409 11:53:43.609" starttime="20180409 11:53:43.608"></status>
+</kw>
+<status status="PASS" endtime="20180409 11:53:43.609" starttime="20180409 11:53:43.486"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20180409 11:53:46.610" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180409 11:53:46.611" starttime="20180409 11:53:43.610"></status>
+</kw>
+<kw name="Finn og navigere til Menyvalget, &quot;Globale kunder&quot;">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@href="https://www.sogeti.no/hvorfor-oss/globale-kunder/"]</arg>
+</arguments>
+<msg timestamp="20180409 11:53:46.615" level="INFO">Clicking link 'xpath=//a[@href="https://www.sogeti.no/hvorfor-oss/globale-kunder/"]'.</msg>
+<status status="PASS" endtime="20180409 11:53:50.668" starttime="20180409 11:53:46.614"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Navigerte til globale kunder</arg>
+</arguments>
+<status status="PASS" endtime="20180409 11:53:50.669" starttime="20180409 11:53:50.668"></status>
+</kw>
+<status status="PASS" endtime="20180409 11:53:50.669" starttime="20180409 11:53:46.612"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20180409 11:53:53.671" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180409 11:53:53.672" starttime="20180409 11:53:50.670"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180409 11:53:56.934" starttime="20180409 11:53:53.675"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" endtime="20180409 11:53:56.935" critical="yes" starttime="20180409 11:53:29.308"></status>
+</test>
+<doc>Demo testcase for robotframework</doc>
+<status status="PASS" endtime="20180409 11:53:56.945" starttime="20180409 11:53:29.057"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">DEBUG</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Testskript1" pass="1">Testskript1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
